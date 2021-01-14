@@ -13,9 +13,7 @@ namespace ArrayObject
             int second_number = nums.Length - 1;
     
             for (int count = nums.Length / 2; count > 0; count--, firsr_number++, second_number--)
-            {
-                int x = nums[firsr_number];                
-                int y = nums[second_number];             
+            {           
                 if (nums[firsr_number] % 2 == 0 && nums[second_number] % 2 == 0) {               
                     nums[firsr_number] = nums[firsr_number] + nums[second_number];
                     nums[second_number] = nums[firsr_number] - nums[second_number]; 
@@ -55,8 +53,8 @@ namespace ArrayObject
             {
               for (int j = 0; j < Math.Sqrt(matrix.Length); j++)
                 {
-                    if (i < j) matrix[i, j] = 0;
-                    else if (i > j) matrix[i, j] = 1;
+                    if (i < j) matrix[i, j] = 1;
+                    else if (i > j) matrix[i, j] = 0;
                 }
             }
         }
