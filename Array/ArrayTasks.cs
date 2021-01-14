@@ -62,7 +62,7 @@ namespace ArrayObject
                 }
                
             }
-            return matrix;
+            
             throw new NotImplementedException();
         }
     }
