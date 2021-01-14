@@ -22,7 +22,6 @@ namespace ArrayObject
                     nums[firsr_number] = nums[firsr_number] - nums[second_number];                 
                 }
             }
-            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -30,11 +29,11 @@ namespace ArrayObject
         /// </summary>
         public static int DistanceBetweenFirstAndLastOccurrenceOfMaxValue(int[] nums)
         {           
-            int max = nums[0];
+            int max = 0;
             int biggest_value_position = 0;
             int second_value_position = 0;
             int gap = 0;
-            for (int position = 1; position < nums.Length; position++)
+            for (int position = 0; position < nums.Length; position++)
             {
                 if (nums[position] > max)
                 {
@@ -45,7 +44,6 @@ namespace ArrayObject
             }
             gap = second_value_position - biggest_value_position;
             return gap;
-            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -60,10 +58,7 @@ namespace ArrayObject
                     if (i < j) matrix[i, j] = 0;
                     else if (i > j) matrix[i, j] = 1;
                 }
-               
             }
-            
-            throw new NotImplementedException();
         }
     }
 }
