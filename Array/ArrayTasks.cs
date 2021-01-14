@@ -22,7 +22,6 @@ namespace ArrayObject
                     nums[firsr_number] = nums[firsr_number] - nums[second_number];                 
                 }
             }
-            return nums;
             throw new NotImplementedException();
         }
 
